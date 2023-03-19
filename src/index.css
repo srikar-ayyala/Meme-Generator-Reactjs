@@ -16,7 +16,6 @@ body {
 }
 
 .container {
-    /* width: 550px; */
     height: 100vh;
     background-color: white;
     display: flex;
@@ -80,7 +79,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 17px;
-    width: 250px;
+    min-width: 250px;
 }
 
 .meme-txt input {
@@ -157,4 +156,22 @@ main {
 
 .bottom-text {
     bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+
+    .meme {
+        border-left: none;
+    }
+    .meme-input {
+        padding-bottom: 30px;
+        border-bottom: 2px #E3E0F3 solid;
+    }
+
+    .container {
+        height: auto;
+    }
 }
